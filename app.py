@@ -462,7 +462,7 @@ def run_alexa(command=None,computer=None, name=None, No=None):
                 return "Error opening Microsoft Excel"
             
         elif 'open music folder' in command:
-            folder_path = r"C:\Users\Jeeva Reka\OneDrive\Documents\music"  # Replace with the actual path to your folder
+            folder_path = r"C:\Users\User\Music"  # Replace with the actual path to your folder
 
             try:
                 subprocess.Popen(['explorer', folder_path], shell=True)
@@ -474,9 +474,7 @@ def run_alexa(command=None,computer=None, name=None, No=None):
                     talk(f"Error Opening the music folder")
                 return f"Error Opening the music folder"
 
-        elif 'open paper folder' in command:
-            folder_path = r"C:\Users\Jeeva Reka\OneDrive\Documents\presentation"  # Replace with the actual path to your folder
-
+       
             try:
                 subprocess.Popen(['explorer', folder_path], shell=True)
                 if enable_talkback:
@@ -487,8 +485,7 @@ def run_alexa(command=None,computer=None, name=None, No=None):
                     talk(f"Error Opening the paper folder")
                 return f"Error Opening the paper folder"
         
-        elif 'open movie folder' in command:
-            folder_path = r"C:\Users\Jeeva Reka\Videos\movies"  # Replace with the actual path to your folder
+       
 
             try:
                 subprocess.Popen(['explorer', folder_path], shell=True)
@@ -500,9 +497,7 @@ def run_alexa(command=None,computer=None, name=None, No=None):
                     talk(f"Error Opening the movie folder")
                 return f"Error Opening the movie folder"
           
-        elif 'open screenshot folder' in command:
-            folder_path = r"C:\Users\Jeeva Reka\OneDrive\Pictures\Screenshots"  # Replace with the actual path to your folder
-
+        
             try:
                 subprocess.Popen(['explorer', folder_path], shell=True)
                 if enable_talkback:
